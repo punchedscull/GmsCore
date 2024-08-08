@@ -50,7 +50,7 @@
     <string name="permission_service_knol_label">Knol</string>
     <string name="permission_service_knol_description">Uygulamanın, bağlı herhangi bir Google hesabıyla ile Knol\'a erişmesine izin verir.</string>
     <string name="permission_service_lh2_label">Picasa Web Albümleri</string>
-    <string name="permission_service_lh2_description">Uygulamanın, bağlı herhangi bir Google hesabıyla ile Picasa Web Albümleri'ne erişmesine izin verir.</string>
+    <string name="permission_service_lh2_description">Uygulamanın, bağlı herhangi bir Google hesabıyla ile Picasa Web Albümleri\'ne erişmesine izin verir.</string>
     <string name="permission_service_local_label">Google Haritalar</string>
     <string name="permission_service_local_description">Uygulamanın, bağlı herhangi bir Google hesabıyla ile Google Haritalar\'a erişmesine izin verir.</string>
     <string name="permission_service_mail_label">Google Mail</string>
@@ -128,12 +128,12 @@
     <string name="permission_scope_www.googleapis.com_auth_drive.metadata.readonly">Google Drive\'ınızdaki dosyalar ve belgeler için meta verileri görüntüleme</string>
     <string name="permission_scope_www.googleapis.com_auth_drive.readonly">Google Drive\'ınızdaki dosya ve belgeleri görüntüleme</string>
     <string name="permission_scope_www.googleapis.com_auth_drive.scripts">Google Apps Script komut dosyalarınızın davranışını değiştirme</string>
-    <string name="permission_scope_www.googleapis.com_auth_drive">Google Drive'ınızdaki dosya ve belgeleri görüntüleme ve yönetme</string>
+    <string name="permission_scope_www.googleapis.com_auth_drive">Google Drive\'ınızdaki dosya ve belgeleri görüntüleme ve yönetme</string>
     <string name="permission_scope_www.googleapis.com_auth_freebase.readonly">Freebase hesabınızı görüntüleme</string>
     <string name="permission_scope_www.googleapis.com_auth_freebase">Hesabınızla Freebase\'de oturum açma</string>
     <string name="permission_scope_www.googleapis.com_auth_fusiontables">Fusion Tablolarınızı yönetme</string>
     <string name="permission_scope_www.googleapis.com_auth_fusiontables.readonly">Fusion Tablolarınızı görüntüleme</string>
-    <string name="permission_scope_www.googleapis.com_auth_games">Google Play Games'teki verilere erişmek için kapsam.</string>
+    <string name="permission_scope_www.googleapis.com_auth_games">Google Play Games\'teki verilere erişmek için kapsam.</string>
     <string name="permission_scope_www.googleapis.com_auth_gan">GAN verinizi yönetme</string>
     <string name="permission_scope_www.googleapis.com_auth_gan.readonly">GAN verinizi görüntüleme</string>
     <string name="permission_scope_www.googleapis.com_auth_gcm_for_chrome">Chrome için CloudMessaging</string>
@@ -166,7 +166,7 @@
     <string name="permission_scope_www.googleapis.com_auth_userinfo.email">E-posta adresinizi görüntüleme</string>
     <string name="permission_scope_www.googleapis.com_auth_userinfo.profile">Hesabınızla ilgili temel bilgileri görüntüleme</string>
     <string name="permission_scope_www.googleapis.com_auth_youtube">YouTube hesabınızı yönetme</string>
-    <string name="permission_scope_www.googleapis.com_auth_youtubepartner">YouTube'daki varlıklarınızı ve ilişkili içeriklerinizi görüntüleme ve yönetme</string>
+    <string name="permission_scope_www.googleapis.com_auth_youtubepartner">YouTube\'daki varlıklarınızı ve ilişkili içeriklerinizi görüntüleme ve yönetme</string>
     <string name="permission_scope_www.googleapis.com_auth_youtube.readonly">YouTube hesabınızı görüntüleme</string>
     <string name="permission_scope_www.googleapis.com_auth_youtube.upload">YouTube videolarınızı yönetme</string>
     <string name="permission_scope_www.googleapis.com_auth_yt_analytics_monetary.readonly">YouTube içeriğiniz için YouTube Analytics parasal raporlarını görüntüleme</string>

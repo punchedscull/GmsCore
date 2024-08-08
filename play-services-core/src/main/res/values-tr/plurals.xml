@@ -23,8 +23,8 @@
         <item quantity="other"><xliff:g example="123">%1$d</xliff:g> kayıtlı uygulama</item>
     </plurals>
     <plurals name="cond_perm_summary">
-        <item quantity="one">microG Servisleri'nin düzgün çalışması için gerekli olan bir izin verilmedi.</item>
-        <item quantity="other">microG Servisleri'nin düzgün çalışması için gerekli olan izinler verilmedi.</item>
+        <item quantity="one">microG Servisleri\'nin düzgün çalışması için gerekli olan bir izin verilmedi.</item>
+        <item quantity="other">microG Servisleri\'nin düzgün çalışması için gerekli olan izinler verilmedi.</item>
     </plurals>
     <plurals name="cond_perm_action">
         <item quantity="one">Eksik izni iste</item>
