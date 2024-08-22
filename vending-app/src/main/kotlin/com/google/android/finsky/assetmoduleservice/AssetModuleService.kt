@@ -91,7 +91,7 @@ class AssetModuleServiceImpl(
             return
         }
         if (moduleData == null && moduleErrorRequested.contains(packageName)) {
-            Log.d(TAG, "startDownload: module name is null")
+            Log.d(TAG, "startDownload: moduleData request error")
             val result = Bundle().apply { putStringArrayList(KEY_PACK_NAMES, arrayListOf<String>()) }
             callback?.onStartDownload(-1, result)
             return
