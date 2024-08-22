@@ -82,7 +82,6 @@ class AssetModuleServiceImpl(
 ) : IAssetModuleService.Stub(), LifecycleOwner {
     private val sharedModuleDataFlow = MutableSharedFlow<ModuleData>()
     private var moduleData: ModuleData? = null
-    private val moduleErrorRequested = arrayListOf<String>()
 
     override fun startDownload(packageName: String?, list: MutableList<Bundle>?, bundle: Bundle?, callback: IAssetModuleServiceCallback?) {
         Log.d(TAG, "Method (startDownload) called by packageName -> $packageName")
@@ -91,7 +90,7 @@ class AssetModuleServiceImpl(
             callback?.onError(Bundle().apply { putInt(KEY_ERROR_CODE, -5) })
             return
         }
-        if (moduleData == null && list.all { it.getString(KEY_MODULE_NAME) == null }) {
+        if (moduleData == null && moduleErrorRequested.contains(packageName)) {
             Log.d(TAG, "startDownload: module name is null")
             val result = Bundle().apply { putStringArrayList(KEY_PACK_NAMES, arrayListOf<String>()) }
             callback?.onStartDownload(-1, result)
@@ -264,5 +263,9 @@ class AssetModuleServiceImpl(
 
     override fun cancelDownloads(packageName: String?, list: MutableList<Bundle>?, bundle: Bundle?, callback: IAssetModuleServiceCallback?) {
         Log.d(TAG, "Method (cancelDownloads) called but not implemented by packageName -> $packageName")
+    }
+
+    companion object {
+        private val moduleErrorRequested = arrayListOf<String>()
     }
 }
