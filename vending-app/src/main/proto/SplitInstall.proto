@@ -1,0 +1,83 @@
+
+option java_package = "com.google.android.finsky";
+option java_multiple_files = true;
+
+message GoogleApiResponse {
+    optional ApiResponse response = 1;
+    optional UnknownType type= 5;
+    optional bytes unknownFieldBytes= 9;
+}
+
+message UnknownType {
+    optional int64 id=1;
+}
+
+message ApiResponse {
+    optional TocResponse tocApi = 6;
+    optional SplitResponse splitReqResult = 21;
+//    optional SyncApiResp syncResult = 183;
+}
+
+message TocResponse {
+    optional string tocTokenValue = 22;
+}
+
+message SplitResponse {
+    optional int32 unknownInt32 = 1;
+    optional PkgFetchInfo pkgList = 2;
+}
+
+message PkgFetchInfo {
+    repeated SplitPkgInfo pkgDownLoadInfo = 15;
+}
+
+message SplitPkgInfo {
+    optional string splitPkgName = 1;
+    optional int64 size = 2;
+    optional string checkSum = 4;
+    optional string downloadUrl = 5;
+    optional DownloadInfo slaveDownloadInfo = 8;
+    optional string checksum = 9;
+    optional string unknownPkgInfoString = 15;
+    optional DownloadInfo otherDownloadInfo = 16;
+}
+
+message DownloadInfo {
+    optional int32 id = 1;
+    optional int64 size = 2;
+    optional string url = 3;
+}
+
+//message SyncApiResp {
+//    repeated SyncRespContent content = 1;
+//    optional SyncToken syncTokenValue = 2;
+////    repeated string c=3;
+//}
+//
+//message SyncToken {
+//    optional string  mvalue = 1;
+//}
+//
+//
+//message SyncRespContent {
+//    oneof b {
+//        UnknowTypeaynt unknowEmptyField = 2;
+//    }
+//    optional int64 token = 1;
+//}
+//
+//message UnknownType {
+//    optional UnknowEmptyAynx a=1;
+//    optional int32 id=2; //unknow enum
+//}
+//
+//message UnknowEmptyAynx {
+//    oneof b {
+//        UnknowTypeawwm oneofField25 = 26;
+//    }
+//}
+//
+//message UnknowTypeawwm {
+//    optional int32 id=1;
+//}
+
